@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>Trek Place Predictor</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      
+
+      body { 
+        background-image: url(https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        margin: 0;
+        padding: 0px;
+        max-width: 100%;
+        max-height: auto;
+        font-family: fantasy;
+      }
+
+      /* Container for the horizontal cards */
+      .card-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 200px;
+      }
+
+      /* Styles for the individual cards */
+      .card {
+        width: 200px;
+        height: 250px;
+        background-color: rgba(221, 235, 235, 0.8);
+        border: 1px solid rgb(11, 0, 0);
+        border-radius: 14px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+        padding: 50px;
+        text-align: center;
+      }
+
+      /* Styles for the card title */
+      .card h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      /* Styles for the card content */
+      .card p {
+        font-size: 16px;
+        color: #333;
+      }
+
+      li a {
+        display: block;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 60px;
+      }
+      /*style of the button*/
+      button {
+        background-color: lightyellow;
+        font-size: 15px;
+        padding: 10px 24px;
+        border-radius: 6px;
+      }
+      /* style of the navigation bar*/
+      .topnav {
+        background-color: rgb(52, 47, 47);
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      } 
+
+      .topnav form {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 12px;
+      }
+      .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align:  center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      }
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .topnav a.active {
+        background-color: #04AA6D;
+        color:white;
+      }
+      .topnav input[type=text] {
+        float: right;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        margin-right: 5px;
+        font-size: 17px;
+      }
+      .topnav input[type=text] {
+        border: 1px solid #ccc;
+      }
+    </style> 
+ 
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-white">
+      
+      <div class="topnav">
+        <div>
+          <a href="https://www.bigfootstay.com/post/safety-tips-for-trekking">Safety Guidelines</a>
+          <a href="https://www.ndtv.com/topic/maharashtra-weather">Blog/News</a>
+        </div>
+        
+        <nav>
+          <form action="/logout?_method=DELETE" method="POST">
+            <h1 style="color: white;">  <%= name %></h1>
+            <div>
+              <button type="submit">Logout</button>
+            </div>
+          </form>
+        </nav>
+      </div>
+      <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <h2>Beginner</h2>
+            <hr>
+            <p>The Trekker who haven't done atleast 5 Trek</p>
+            <br>
+            <br>
+            <br>
+            <a
+                href="https://www.tripoto.com/maharashtra/trips/5-beginner-treks-near-mumbai-5b5e06018590e"><button>Explore</button></a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <h2>Intermediate</h2>
+            <hr>
+            <p>The Trekker who had completed more than 10 Trek</p>
+            <br>
+            <br>
+            <a
+                href="https://travelindiadestinations.com/top-5-trekking-destinations-in-maharashtra-medium-advanced-level/"><button>Explore</button></a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <h2>Expert</h2>
+            <hr>
+            <p>Trekker which has Experience of more than 2 - 3 year.</p>
+            <br>
+            <br>
+            <a
+                href="https://bestindiantreks.com/toughest-most-difficult-treks-in-maharashtra/"><button>Explore</button></a>
+        </div>
+    </div>
+  </body>
+</html>

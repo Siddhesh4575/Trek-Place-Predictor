@@ -1,0 +1,115 @@
+ /* Styles for the background image */
+ body { 
+  background-image: url(assets/img12.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  padding: 0px;
+  max-width: 100%;
+  max-height: auto;
+  font-family: fantasy;
+  animation: change 20s infinite ease-in;
+}
+@keyframes change {
+  10%
+  {
+      background-image: url(assets/img9.jpg);
+  }
+  30%
+  {
+      background-image: url(assets/img10.jpg);
+  }
+  60%
+  {
+      background-image: url(assets/img11.jpg);
+  }
+  90%
+  {
+      background-image: url(assets/img12.jpg);
+  }
+}
+/* Container for the horizontal cards */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 200px;
+}
+
+/* Styles for the individual cards */
+.card {
+  width: 200px;
+  height: 250px;
+  background-color: rgba(221, 235, 235, 0.8);
+  border: 1px solid rgb(11, 0, 0);
+  border-radius: 14px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  text-align: center;
+}
+
+/* Styles for the card title */
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Styles for the card content */
+.card p {
+  font-size: 16px;
+  color: #333;
+}
+
+li a {
+  display: block;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+}
+/*style of the button*/
+button {
+  background-color: lightyellow;
+  font-size: 15px;
+  padding: 10px 24px;
+  border-radius: 6px;
+}
+/* style of the navigation bar*/
+.topnav {
+  background-color: rgb(52, 47, 47);
+  overflow: hidden;
+} 
+.topnav a {
+float: left;
+color: #f2f2f2;
+text-align:  center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #04AA6D;
+  color:white;
+}
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 5px;
+  font-size: 17px;
+}
+.topnav input[type=text] {
+  border: 1px solid #ccc;
+}
+
+
+
+
